@@ -1,0 +1,2 @@
+module FifaHelper
+end

@@ -1,0 +1,2 @@
+class Vendo < ApplicationRecord
+end

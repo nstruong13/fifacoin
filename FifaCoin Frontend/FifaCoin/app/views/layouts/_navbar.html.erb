@@ -1,0 +1,24 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+	  <div class='container'>
+			<%= link_to "Rate My GSI", root_path , class: "nav navbar-nav navbar-left", id: "nav-title"%>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "GSI",gsis_path, class: 'btn btn-nabbar' %></li>
+        <li><%= link_to "Courses", courses_path, class: 'btn btn-nabbar' %></li>
+        <li><%= link_to "All Reviews", reviews_path, class: 'btn btn-nabbar' %></li>
+				<% if user_signed_in? %>
+				<li><%= link_to 'Profile', current_user, class: 'btn btn-nabbar' %></li>
+				<li> <%= link_to 'Logout', logout_path, class: "btn btn-navbar", method: :delete %> </li>
+				<% else %>	
+     				<li>
+						<%= link_to 'Login',login_path, class: "btn btn-navbar" %>
+				    </li>
+					<li>
+     				  	<%= link_to 'Signup',  new_user_registration_path, class: 'btn btn-navbar'%>
+					</li>
+				<% end %>
+
+			  </ul>	  
+	  </div>
+</header>	  
+

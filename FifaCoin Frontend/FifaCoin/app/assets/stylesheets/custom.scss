@@ -1,0 +1,67 @@
+body {
+  padding-top: 65px;
+}
+
+#nav-title{
+  color:white;
+  font-size: 24px;
+  padding-top:10px;
+  &:hover{
+    color:#9d9d9d;
+    text-decoration: none;
+  }
+}
+
+//CSS for flash notifications on the top of the app
+.alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+}
+
+.alert-alert {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
+}
+
+.alert-notice {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
+}
+.center{
+  text-align: center;
+}
+
+.user-form{
+  input{
+    width: 400px;
+    height: 40px;
+  }
+  label{
+    text-align: left;
+  }
+  #user_remember_me{
+    width:20px;
+    padding-top:40px;
+    text-align:left;
+  }
+}
+
+#searchbox {
+  position:absolute;
+  left: 1200px;
+  display:inline-block;
+  z-index:10
+}
